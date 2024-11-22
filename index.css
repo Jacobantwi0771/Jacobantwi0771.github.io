@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.nav-list li a{
+   text-decoration: none;
+   margin: 0 1.5rem;
+   font-weight: 600;
+   font-size: 2rem;
+   color: white;
+   border-bottom: 2px solid transparent;
+}
+.nav-list li a:hover{
+    border-bottom: 3px solid red;
+    transition: all .35s ease;
+}
+.bar{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.logo h2{
+    color: rgb(153, 194, 194);
+    font-weight: 800;
+    font-size: 2.5rem;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(212, 228, 188);
+    padding: 8% 0;
+}
+ .hero-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid black;*/
+}
+.hero-page .img1{
+    transition: all .55s ease;
+}
+.hero-page .img1:hover{
+    transform: translateX(15px);
+}
+.hero-page .img2{
+    transition: all .55s ease;
+}
+.hero-page .img2:hover{
+    transform: translateX(-15px);
+}
+.hero-page .intro{
+    margin: 5%;
+}
+.hero-page .intro h1{
+    font-weight: 800;
+    font-size: 3.4rem;
+    font-family: fantasy;
+}
+.hero-page .intro p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 8px;
+}
+.hero-page .intro button{
+    background: rgb(255, 4, 4);
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+.hero-page .intro button:hover{
+    background: yellowgreen;
+    transform: translateY(-8px);
+}
+.products{
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.items .try{
+    display: flex;
+    justify-content: center;
+}
+.items .item1{
+    background-color: rgb(212, 228, 188);
+    border: 5px solid black;
+    margin: 20px;
+    padding: 5px;
+    width: 25%;
+}
+.items .item1 h2{
+    margin: 3px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.items .item1 button{
+    margin-left: 38%;
+    background: rgb(255, 4, 4);
+    padding: 2px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+.items .item1 button:hover{
+    background: yellowgreen;
+    transform: translateY(-5px);
+}
+.items .item1 img{
+   transition: all .45s ease;
+   align-items: center;
+}
+.items .item1 img:hover{
+    transform: translateY(-10px);
+}
+.products h3{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+.info{
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    background-color: rgb(212, 228, 188);
+}
+.info h3{
+    font-family: fantasy;
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-top: 20px;
+    text-align: center;
+}
+ .info-us{
+   width: 80%;
+   margin: auto;
+}
+.info-us label{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.info-us input,textarea{
+    margin-top: 5px;
+    width: 40rem;
+    background-color: rgb(211, 240, 169);
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 3px;
+}
+.info-us textarea{
+border: 2px solid black;
+}
+.info-us .butt{
+    background-color: red;
+    padding: 3px;
+    transition: all .55s ease;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.info-us .butt:hover{
+    transform: translateY(-5px);
+    background-color: yellowgreen;
+}
+.roam{
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+}
+.roam button{
+    background: yellow;
+    padding: 2px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: all .45s ease;
+}
+.roam button:hover{
+    background-color: red;
+    transform: translateX(-8px);
+}
+.last{
+   background-color: black;
+   width: 100%;
+   color: white;
+   padding: 10px;
+   height: 100%;
+}
+.last p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.last a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.last a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+@media screen and (min-width: 1280px) {
+    body{
+        overflow-x: hidden;
+    }
+    .info{
+        margin-top: 10px;
+        min-height: 80vh;
+        width: 100%;
+    }
+    .items .item1{
+        width: 25%;
+        margin: 15px 16px;
+    }
+    .hero{
+        min-height: 45vh;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hero-page{
+        flex-wrap: wrap;
+        padding-top: 2%;
+    }
+
+}
+@media screen and (max-width:1024px){
+    .nav-list{
+        display: flex;
+    }
+    .hero{
+        min-height: 40vh;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hero-page{
+    padding: 0 10px;
+    }
+    .img2{
+        display: none;
+    }
+    .items .item1{
+        width: 38%;
+        margin: 15px 16px;
+    }
+    .items .item1 button{
+        margin-left: 40%;
+    }
+    .try img{
+        max-width: 50%;
+        object-fit: contain;
+    }
+    .info{
+        margin-top: 30px;
+        min-height: 50vh;
+        width: 100%;
+    }
+    .info h3{
+        margin: 15px auto;
+    }
+   /*.info-us{
+       margin-left: 30%;
+    }*/
+    .last a{
+        margin-top: 15px;
+        margin-bottom: 7px;
+    }
+}
+@media screen and (max-width:850px){
+    .nav-list{
+        overflow: hidden;
+        display: none;
+    }
+    .nav-list li a{
+        font-size: 1.5rem;
+    }
+    .bar{
+        display: block;
+    }
+    .hero{
+        min-height: 50vh;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hero-page{
+        /*flex-wrap: wrap;*/
+        padding-top: 5%;
+    }
+    .img2{
+       display: none;
+    }
+    .products{
+        margin-bottom: 50px;
+        min-height: 80vh;
+        width: 100%;
+    }
+     .items .item1{
+        width: 45%;
+        flex-direction: column;
+        margin: 13px;
+    }
+    .items .item1 button{
+        margin-left: 40%;
+    }
+    .products h3{
+        margin: 25px;
+    }
+    .try img{
+        max-width: 50%;
+        object-fit: contain;
+    }
+    .info{
+        margin-top: 10px;
+        min-height: 45vh;
+        width: 100%;
+    }
+    .info h3{
+        margin: 15px auto;
+    }
+    /*.info-us{
+       margin-left: 30%;
+    }*/
+}
+@media screen and (max-width:600px){
+    .items .item1{
+        width: 70%;
+        flex-direction: column;
+    }
+    .items .item1 button{
+        margin-left: 40%;
+    }
+    .info{ 
+        margin-top: 10px;
+        min-height: 60vh;
+        width: 100%;
+    }
+    .info h3{
+        margin: 15px auto;
+    }
+    .last a{
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    .img1{
+        display: none;
+    }
+    .info-us .butt{
+        margin-bottom: 5%;
+    }
+}
+@media screen and (min-width:320px) and (max-width: 450px){
+    .info{
+        width: 100%;
+        min-height: 60vh;
+    }
+    .info-us input,textarea{
+        margin-top: 5px;
+        max-width: 30rem;
+        font-size: 1.6rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        padding: 3px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:320px){
+    .info{
+        width: 100%;
+        min-height: 60vh;
+    }
+    .info-us input,textarea{
+        margin-top: 5px;
+        max-width: 25rem;
+        font-size: 1.6rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        padding: 3px;
+        margin: auto;
+    }
+}
